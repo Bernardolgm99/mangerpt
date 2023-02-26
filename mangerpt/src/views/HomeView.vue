@@ -38,7 +38,7 @@ import NavBar from '../components/NavBar.vue'
   <!-- Section 3 -->
   <div>
     <div class="section3 text d-flex justify-center align-center">
-      <p>
+      <p class="drop-cap">
         Eu sempre cozinhei e gostei de estar na cozinha mas achava que era um hobby, até ser convidado para meu primeiro
         trabalho numa cozinha profissional em um restaurante no Algarve- Portugal. Foi quando tudo mudou e percebi que era
         isso que eu queria fazer para sempre e onde eu queria estar, numa cozinha, mas ao mesmo tempo vi que necessitava
@@ -62,6 +62,14 @@ import NavBar from '../components/NavBar.vue'
 </template>
 
 <style scoped>
+.drop-cap::first-letter {
+  -webkit-initial-letter: 2;
+          initial-letter: 2;
+  color: rgb(216, 56, 56);
+  font-weight: bold;
+  margin-right: .25em;
+}
+
 header {
   height: 632px;
   display: flex;
