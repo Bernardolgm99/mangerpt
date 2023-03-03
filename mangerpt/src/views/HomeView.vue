@@ -1,5 +1,6 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
+import Contact from '../components/Contact.vue'
 </script>
 
 <template>
@@ -17,57 +18,125 @@ import NavBar from '../components/NavBar.vue'
 
   <!-- Section 2 -->
   <div>
-    <v-row class="section2">
-      <v-col class="d-flex justify-end pa-0">
+    <div class="section2 d-flex flex-wrap">
+      <div class="d-flex justify-end pa-0 flex-grow-1">
         <div>
           <v-img :width="600" :height="512" aspect-ratio="16/9" src="../src/assets/images/chef.png"></v-img>
         </div>
-      </v-col>
-      <v-col class="text d-flex justify-start align-center">
-        <p class="ms-16">
+      </div>
+      <div class="text d-flex justify-start align-center flex-grow-1">
+        <p class="">
           Eu sou Manuel Brito Junior tenho 50 anos e sou chef de cozinha mas prefiro dizer que sou cozinheiro, não por
           humildade ou modéstia, mas por gostar de cozinhar e estar no calor e no stress de uma cozinha full time ao invés
           de passar mais tempo em um escritório, organizando e administrando, trabalho muito importante e essencial ,
           diga-se de passagem.
         </p>
-      </v-col>
-    </v-row>
+<!--         <p class="my-14 d-md-none">
+          A Eu sou Manuel Brito Junior tenho 50 anos e sou chef de cozinha mas prefiro dizer que sou cozinheiro, não por
+          humildade ou modéstia, mas por gostar de cozinhar e estar no calor e no stress de uma cozinha full time ao invés
+          de passar mais tempo em um escritório, organizando e administrando, trabalho muito importante e essencial ,
+          diga-se de passagem.
+        </p>
+ -->      </div>
+    </div>
   </div>
 
 
   <!-- Section 3 -->
-  <div>
-    <div class="section3 text d-flex justify-center align-center">
-      <p class="drop-cap">
-        Eu sempre cozinhei e gostei de estar na cozinha mas achava que era um hobby, até ser convidado para meu primeiro
-        trabalho numa cozinha profissional em um restaurante no Algarve- Portugal. Foi quando tudo mudou e percebi que era
-        isso que eu queria fazer para sempre e onde eu queria estar, numa cozinha, mas ao mesmo tempo vi que necessitava
-        de conhecimento, pois o que eu sabia não era suficiente para me tornar um cozinheiro profissional então decidi me
-        mudar para Londres e estudar no Le Cordon Bleu onde me formei no curso de cozinha e depois no de Patissiere.
-      </p>
-    </div>
+  <div class="section3">
+    <v-container>
+      <div class="text d-flex justify-center align-center">
+        <p class="drop-cap py-6">
+          Eu sempre cozinhei e gostei de estar na cozinha mas achava que era um hobby, até ser convidado para meu primeiro
+          trabalho numa cozinha profissional em um restaurante no Algarve- Portugal. Foi quando tudo mudou e percebi que era
+          isso que eu queria fazer para sempre e onde eu queria estar, numa cozinha, mas ao mesmo tempo vi que necessitava
+          de conhecimento, pois o que eu sabia não era suficiente para me tornar um cozinheiro profissional então decidi me
+          mudar para Londres e estudar no Le Cordon Bleu onde me formei no curso de cozinha e depois no de Patissiere.
+        </p>
+      </div>
+    </v-container>
   </div>
 
   <!-- Section 4 -->
   <div>
-    <div>
-      <h2>JOBS</h2>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <v-container class="d-flex align-center flex-column section4">
+      <h2 class="mt-16 mb-5">JOBS</h2>
+      <div class="d-flex justify-center flex-wrap w-100">
+        <div class="mx-16 my-5 card-out d-flex justify-center align-center">
+          <div class="card-in d-flex flex-column align-center text">
+            <p class="my-auto mx-8">4 Anos em Londresa num Hotel 5
+              estrelas</p><img class="mb-10" src="/src/assets/icons/stars.png">
+          </div>
+        </div>
+        <div class="mx-16 my-5 card-out d-flex justify-center align-center">
+          <div class="card-in d-flex flex-column align-center text">
+            <p class="my-auto mx-8">4 Anos em Londresa num Hotel 5
+              estrelas</p><img class="mb-10" src="/src/assets/icons/stars.png">
+          </div>
+        </div>
+        <div class="mx-16 my-5 card-out d-flex justify-center align-center">
+          <div class="card-in d-flex flex-column align-center text">
+            <p class="my-auto mx-8">4 Anos em Londresa num Hotel 5
+              estrelas</p><img class="mb-10" src="/src/assets/icons/stars.png">
+          </div>
+        </div>
       </div>
-    </div>
+      <p class="my-16">“Me considero muito profissional e exigente, prezo muito pela qualidade e sabor só uso ingredientes
+        de primeira qualidade, pois acredito que é a base de tudo, posso dizer que sou bem Old School.”</p>
+    </v-container>
   </div>
+
+  <!-- Section 5 -->
+  <div class="bg-black">
+    <v-container class="text py-16">
+      <p>A ideia do <span style="font:arial; color: rgb(216, 56, 56); font-size: 35px;">manger.pt</span> surgiu na vontade
+        e na necessidade de fazer parte de um novo mercado e também me desafiar noutras andanças como esse mundo digitais
+        dando a conhecer minhas delícias e trabalho e também minha fascinação pela cozinha.</p>
+    </v-container>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="section6">
+    <v-container class="d-flex justify-center py-16">
+      <div class="card-menu d-flex flex-column align-center justify-space-between">
+        <h3 class="mb-6">MENU</h3>
+        <p class="mb-16">Serão inicialmente 6 sobremesas e um Pão na nossa loja , mas sempre com a possibilidade de aceitar qualquer
+          encomenda, doce ou salgada, mediante consulta, posso garantir que serão de altíssima qualidade e
+          com muito sabor.</p>
+          <button class="pointer">Go to menu</button>
+      </div>
+    </v-container>
+  </div>
+
+  <Contact />
 </template>
 
 <style scoped>
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
 .drop-cap::first-letter {
-  -webkit-initial-letter: 2;
-          initial-letter: 2;
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
   color: rgb(216, 56, 56);
   font-weight: bold;
   margin-right: .25em;
+}
+
+.card-out {
+  background-color: #111111;
+  min-height: 400px;
+  min-width: 320px;
+}
+
+.card-in {
+  border: 3px solid #e3e3e3;
+  height: 380px;
+  width: 300px;
+  text-align: center;
 }
 
 header {
@@ -84,31 +153,85 @@ header {
   max-width: 450px;
 }
 
-.section2 {
-  height: 512px;
-  margin: 0px;
-}
-
 .section2 .text {
   background-color: #DA6852;
 }
 
-.section2 .text p {
-  width: 400px;
+.section2 .text p{
+  width: 500px;
 }
 
 .section3 {
   background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('../src/assets/images/section3.png');
   background-size: cover;
   background-position: center;
-  height: 600px;
 }
 
 .section3 p {
-  max-width: 1042px;
+  width: 75vw;
+}
+
+.section4 p {
+  font-size: 24px;
 }
 
 .text p {
   font-size: 24px;
   color: #e3e3e3;
-}</style>
+}
+
+.section6 {
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('../src/assets/images/section3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-menu {
+  max-width: 600px;
+  background-color: #010101;
+  color:#e3e3e3;
+  padding: 50px 100px 100px 100px;
+  text-align: center;
+}
+
+@media screen and (max-width:960px) {
+  .section3 p {
+    max-width: 100vw;
+  }
+    .card-menu {
+    padding: 50px 50px 100px 50px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+}
+.card-menu p {
+  font-size: 24px;
+}
+
+.card-menu button {
+  font-size: 24px;
+  border: 1px sol id #e3e3e3;
+  padding: 10px 50px
+}
+
+.card-menu button:hover {
+  background-color: #111
+}
+
+.card-menu button:active {
+  background-color: #333;
+}
+
+.pointer {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+</style>

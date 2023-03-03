@@ -19,9 +19,9 @@
         </v-col>
         <v-col class="d-none d-md-block pa-0">
           <div class="d-flex justify-space-between h-100">
-            <div class="navegationBtn pointer d-flex align-center px-4"><span>home</span></div>
-            <div class="navegationBtn pointer d-flex align-center px-4"><span>menu</span></div>
-            <div class="navegationBtn pointer d-flex align-center px-4"><span>contact</span></div>
+            <div class="navegationBtn pointer d-flex align-center px-10"><span>home</span></div>
+            <div class="navegationBtn pointer d-flex align-center px-10"><span>menu</span></div>
+            <div class="navegationBtn pointer d-flex align-center px-10"><span>contact</span></div>
           </div>
         </v-col>
         <v-col class="d-none d-md-block"></v-col>
@@ -143,6 +143,7 @@ nav {
 
 .navegationBtn {
   font-size: 18px;
+  padding: 10px 80px;
 }
 
 .navegationBtn:hover {
