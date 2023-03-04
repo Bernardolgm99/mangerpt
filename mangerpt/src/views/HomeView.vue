@@ -18,27 +18,21 @@ import Contact from '../components/Contact.vue'
 
   <!-- Section 2 -->
   <div>
-    <div class="section2 d-flex flex-wrap">
-      <div class="d-flex justify-end pa-0 flex-grow-1">
-        <div>
-          <v-img :width="600" :height="512" aspect-ratio="16/9" src="../src/assets/images/chef.png"></v-img>
+    <v-row class="section2 d-flex flex-wrap ma-0">
+      <v-col class="d-flex justify-end pa-0 bg-white">
+        <div class="chef-img">
+          <img style="max-width: 100%; min-width: 100%; vertical-align: bottom;" src="/src/assets/icons/chef.png">
         </div>
-      </div>
-      <div class="text d-flex justify-start align-center flex-grow-1">
-        <p class="">
+      </v-col>
+      <v-col class="text d-flex justify-start align-center pa-0">
+        <p class=" ma-10">
           Eu sou Manuel Brito Junior tenho 50 anos e sou chef de cozinha mas prefiro dizer que sou cozinheiro, não por
           humildade ou modéstia, mas por gostar de cozinhar e estar no calor e no stress de uma cozinha full time ao invés
           de passar mais tempo em um escritório, organizando e administrando, trabalho muito importante e essencial ,
           diga-se de passagem.
         </p>
-<!--         <p class="my-14 d-md-none">
-          A Eu sou Manuel Brito Junior tenho 50 anos e sou chef de cozinha mas prefiro dizer que sou cozinheiro, não por
-          humildade ou modéstia, mas por gostar de cozinhar e estar no calor e no stress de uma cozinha full time ao invés
-          de passar mais tempo em um escritório, organizando e administrando, trabalho muito importante e essencial ,
-          diga-se de passagem.
-        </p>
- -->      </div>
-    </div>
+      </v-col>
+</v-row>
   </div>
 
 
@@ -103,13 +97,24 @@ import Contact from '../components/Contact.vue'
         <p class="mb-16">Serão inicialmente 6 sobremesas e um Pão na nossa loja , mas sempre com a possibilidade de aceitar qualquer
           encomenda, doce ou salgada, mediante consulta, posso garantir que serão de altíssima qualidade e
           com muito sabor.</p>
-          <button class="pointer">Go to menu</button>
+          <button class="pointer" @click="goMenu">Go to menu</button>
       </div>
     </v-container>
   </div>
 
   <Contact />
 </template>
+
+<script>
+export default {
+  methods: {
+    goMenu() {
+      this.$router.push({name:'menu'});
+    },
+  },
+}
+
+</script>
 
 <style scoped>
 
@@ -144,7 +149,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('../src/assets/images/header.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('/src/assets/icons/header.png');
   background-position: center;
   background-size: cover;
 }
@@ -161,8 +166,22 @@ header {
   width: 500px;
 }
 
+@media screen and (max-width:1100px) {
+.section2 {
+  flex-direction: column;
+}
+.section2 div {
+  justify-content: center !important;
+}
+.section2 .text p {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
 .section3 {
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('../src/assets/images/section3.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('/src/assets/icons/section3.png');
   background-size: cover;
   background-position: center;
 }
@@ -181,7 +200,7 @@ header {
 }
 
 .section6 {
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('../src/assets/images/section3.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('/src/assets/icons/section3.png');
   background-size: cover;
   background-position: center;
 }
@@ -212,7 +231,7 @@ h3 {
 
 .card-menu button {
   font-size: 24px;
-  border: 1px sol id #e3e3e3;
+  border: 1px solid #e3e3e3;
   padding: 10px 50px
 }
 

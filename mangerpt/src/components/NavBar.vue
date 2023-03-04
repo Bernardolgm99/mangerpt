@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="d-md-none menu-mobile d-flex flex-column align-center" :class="{menuMobileOpen: !menu_mobile_open}">
-      <div class="menu-mobile-text pointer py-15 w-100 mt-16">home</div>
+      <div class="menu-mobile-text pointer py-15 w-100 mt-16" @click="goHome">home</div>
       <hr color="#999" class="w-75">
-      <div class="menu-mobile-text pointer py-15 w-100">menu</div>
+      <div class="menu-mobile-text pointer py-15 w-100" @click="goMenu">menu</div>
       <hr color="#999" class="w-75">
       <div class="menu-mobile-text pointer py-15 w-100">contact</div>
     </div>
@@ -14,13 +14,13 @@
         <v-col class="d-md-none"></v-col>
         <v-col class="d-flex justify-center">
           <div>
-            <v-img class='pointer' :width="46" aspect-ratio="4/3" cover src="../src/assets/images/hat 1.png"></v-img>
+            <img class='pointer' style="width:39px" src="/src/assets/icons/hat1.png" @click="goHome">
           </div>
         </v-col>
         <v-col class="d-none d-md-block pa-0">
           <div class="d-flex justify-space-between h-100">
-            <div class="navegationBtn pointer d-flex align-center px-10"><span>home</span></div>
-            <div class="navegationBtn pointer d-flex align-center px-10"><span>menu</span></div>
+            <div class="navegationBtn pointer d-flex align-center px-10" @click="goHome"><span>home</span></div>
+            <div class="navegationBtn pointer d-flex align-center px-10" @click="goMenu"><span>menu</span></div>
             <div class="navegationBtn pointer d-flex align-center px-10"><span>contact</span></div>
           </div>
         </v-col>
@@ -50,7 +50,13 @@ export default {
       else {
         this.menu_mobile_open = true;
       }
-    }
+    },
+    goMenu() {
+      this.$router.push({name:'menu'});
+    },
+    goHome() {
+      this.$router.push({name:'home'});
+    },
   },
 }
 </script>
