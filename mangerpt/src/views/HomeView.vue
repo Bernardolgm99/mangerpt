@@ -9,10 +9,10 @@ import Contact from '../components/Contact.vue'
 
   <!-- Section 1 -->
   <header>
-    <div class="section1">
+    <v-container class="section1">
       <h1 class="f-white"><span class="f-gigant">“</span>Uma experiência gastronómica que vai mudar sua vida<span
           class="f-gigant">”</span></h1>
-    </div>
+    </v-container>
   </header>
 
 
@@ -37,7 +37,7 @@ import Contact from '../components/Contact.vue'
 
 
   <!-- Section 3 -->
-  <div class="section3">
+  <div class="section3 d-flex justify-center align-center">
     <v-container>
       <div class="text d-flex justify-center align-center">
         <p class="drop-cap py-6">
@@ -152,10 +152,11 @@ header {
   background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('/src/assets/icons/header.png');
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .section1 {
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .section2 .text {
@@ -181,9 +182,11 @@ header {
 }
 
 .section3 {
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('/src/assets/icons/section3.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .8)), url('/src/assets/icons/section3.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  min-height: 350px;
 }
 
 .section3 p {
@@ -200,9 +203,10 @@ header {
 }
 
 .section6 {
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .9)), url('/src/assets/icons/section3.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .8)), url('/src/assets/icons/section3.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .card-menu {

@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex">
+    <div class="d-flex contact">
         <v-container class="test d-flex flex-column align-center py-16">
             <h3 class="mb-2">CONTACT US</h3>
             <div class="d-flex flex-wrap">
