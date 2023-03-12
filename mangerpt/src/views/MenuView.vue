@@ -37,22 +37,25 @@ export default {
   data() {
     return {
       all_products: [
-        { id: 1, type: 1, name: "Tiramissú", description: "20 x 30cm", price: "35€", src: "src/assets/icons/tiramissu.jpg" },
+        { id: 1, type: 1, name: "Tiramissú", description: "20 x 30cm", price: "35€", src: "/assets/tiramissu.jpg" },
 
-        { id: 2, type: 1, name: "Cheesecake", description: "Diametro 20cm", price: "35€", src: "src/assets/icons/cheesecake.jpg" },
+        { id: 2, type: 1, name: "Cheesecake", description: "Diametro 20cm", price: "35€", src: "/assets/cheesecake.jpg" },
 
-        { id: 3, type: 1, name: "Brownie", description: "22 x 22cm", price: "40€", src: "src/assets/icons/brownie.jpg" },
+        { id: 3, type: 1, name: "Brownie", description: "22 x 28cm", price: "40€", src: "/assets/brownie.jpg" },
 
-        { id: 4, type: 1, name: "Bolo de Tâmaras", description: "Diametro 20cm", price: "25€", src: "src/assets/icons/bolo-de-tamara.jpg" },
+        { id: 4, type: 1, name: "Bolo de Tâmaras", description: "Diametro 20cm", price: "25€", src: "/assets/bolo-de-tamara.jpg" },
 
-        { id: 5, type: 1, name: "Salt Caramel", description: "20 x 30cm", price: "40€", src: "src/assets/icons/salt-cramel.jpg" },
+        { id: 5, type: 1, name: "Salt Caramel", description: "20 x 30cm", price: "40€", src: "/assets/salt-cramel.jpg" },
 
-        { id: 6, type: 1, name: "Entremet Chocolat Cremely", description: "Diametro 20cm", price: "60€", src: "src/assets/icons/chocolate-cremeux.jpg" },
+        { id: 6, type: 1, name: "Entremet Chocolat Cremely", description: "Diametro 20cm", price: "60€", src: "/assets/chocolate-cremeux.jpg" },
 
-        { id: 7, type: 1, name: "Charlote Pistachio Chocolate", description: "Diametro 20cm", price: "45€", src: "src/assets/icons/charlote-pistachio-chocolate.jpg" },
+        { id: 7, type: 1, name: "Charlote Pistachio Chocolate", description: "Diametro 20cm", price: "45€", src: "/assets/charlote-pistachio-chocolate.jpg" },
+
+        { id: 7, type: 2, name: "Bola de Presunto", description: "2 bolas de 500g", price: "25€", src: "/assets/bola-de-presunto.jpg" },
       ],
       product_for_type: [
         { id: 1, name: "Desserts", products: [] },
+        { id: 2, name: "Salty", products: [] },
       ]
     }
   },
@@ -63,19 +66,7 @@ export default {
   },
 }
 </script>
-[{id: 1, name: Tiramissú, description:  20 x 30cm / 35€},
 
-{id: 2, name: Cheesecake, description: Diametro 20cm / 35€},
-
-{id: 3, name: Brownie, description: 22 x 22cm / 40€},
-
-{id: 4, name: Bolo de Tâmaras, description: Diametro 20cm / 25€},
-
-{id: 5, name: Salt Caramel, description: 20 x 30cm / 40€},
-
-{id: 6, name: Entremet Chocolat Cremely, description:Diametro 20cm / 60€},
-
-{id: 7, name: Charlote Pistachio Chocolate, description: Diametro 20cm / 45€},]
 <style scoped>
 
 .section-menu {
@@ -111,9 +102,9 @@ export default {
 
 header {
   height: 400px;
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('/src/assets/icons/header.png');
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, 0.92), RGBA(0, 0, 0, 0.92)), url('/src/assets/icons/banner-site.jpg');
+  background-position: top;
+  background-size: contain;
   background-attachment: fixed;
 }
 

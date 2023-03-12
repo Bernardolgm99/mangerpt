@@ -10,8 +10,7 @@ import Contact from '../components/Contact.vue'
   <!-- Section 1 -->
   <header>
     <v-container class="section1">
-      <h1 class="f-white"><span class="f-gigant">“</span>Uma experiência gastronómica que vai mudar sua vida<span
-          class="f-gigant">”</span></h1>
+      <img style="max-width: 100%; width: 521px; min-width: 100%; vertical-align: bottom;" src="/src/assets/icons/white-logo.png">
     </v-container>
   </header>
 
@@ -21,18 +20,18 @@ import Contact from '../components/Contact.vue'
     <v-row class="section2 d-flex flex-wrap ma-0">
       <v-col class="d-flex justify-end pa-0 bg-white">
         <div class="chef-img">
-          <img style="max-width: 100%; min-width: 100%; vertical-align: bottom;" src="/src/assets/icons/chef.png">
+          <img style="max-width: 100%; width: 521px; min-width: 100%; vertical-align: bottom;" src="/src/assets/icons/chef.jpg">
         </div>
       </v-col>
       <v-col class="text d-flex justify-start align-center pa-0">
         <p class=" ma-10">
-          Eu sou Manuel Brito Junior tenho 50 anos e sou chef de cozinha mas prefiro dizer que sou cozinheiro, não por
+          Eu sou Manuel Brito Junior tenho 50 anos e sou chef de cozinha, mas prefiro dizer que sou cozinheiro, não por
           humildade ou modéstia, mas por gostar de cozinhar e estar no calor e no stress de uma cozinha full time ao invés
           de passar mais tempo em um escritório, organizando e administrando, trabalho muito importante e essencial ,
           diga-se de passagem.
         </p>
       </v-col>
-</v-row>
+    </v-row>
   </div>
 
 
@@ -42,9 +41,11 @@ import Contact from '../components/Contact.vue'
       <div class="text d-flex justify-center align-center">
         <p class="drop-cap py-6">
           Eu sempre cozinhei e gostei de estar na cozinha mas achava que era um hobby, até ser convidado para meu primeiro
-          trabalho numa cozinha profissional em um restaurante no Algarve- Portugal. Foi quando tudo mudou e percebi que era
+          trabalho numa cozinha profissional em um restaurante no Algarve- Portugal. Foi quando tudo mudou e percebi que
+          era
           isso que eu queria fazer para sempre e onde eu queria estar, numa cozinha, mas ao mesmo tempo vi que necessitava
-          de conhecimento, pois o que eu sabia não era suficiente para me tornar um cozinheiro profissional então decidi me
+          de conhecimento, pois o que eu sabia não era suficiente para me tornar um cozinheiro profissional então decidi
+          me
           mudar para Londres e estudar no Le Cordon Bleu onde me formei no curso de cozinha e depois no de Patissiere.
         </p>
       </div>
@@ -56,27 +57,26 @@ import Contact from '../components/Contact.vue'
     <v-container class="d-flex align-center flex-column section4">
       <h2 class="mt-16 mb-5">JOBS</h2>
       <div class="d-flex justify-center flex-wrap w-100">
-        <div class="mx-16 my-5 card-out d-flex justify-center align-center">
+        <div class="mx-8 my-5 card-out d-flex justify-center align-center">
           <div class="card-in d-flex flex-column align-center text">
-            <p class="my-auto mx-8">4 Anos em Londresa num Hotel 5
-              estrelas</p><img class="mb-10" src="/src/assets/icons/stars.png">
+            <p class="my-auto mx-8">3 years St. Pancras Renaissance Hotel London</p><img class="mb-10"
+              src="/src/assets/icons/stars.png">
           </div>
         </div>
-        <div class="mx-16 my-5 card-out d-flex justify-center align-center">
+        <div class="mx-8 my-5 card-out d-flex justify-center align-center">
           <div class="card-in d-flex flex-column align-center text">
-            <p class="my-auto mx-8">4 Anos em Londresa num Hotel 5
-              estrelas</p><img class="mb-10" src="/src/assets/icons/stars.png">
+            <p class="my-auto mx-8">1 year Grain Store London
+            </p><img class="mb-10" src="/src/assets/icons/stars.png">
           </div>
         </div>
-        <div class="mx-16 my-5 card-out d-flex justify-center align-center">
+        <div class="mx-8 my-5 card-out d-flex justify-center align-center">
           <div class="card-in d-flex flex-column align-center text">
-            <p class="my-auto mx-8">4 Anos em Londresa num Hotel 5
-              estrelas</p><img class="mb-10" src="/src/assets/icons/stars.png">
+            <p class="my-auto mx-8">7 Years Hotel Union Øye Norway till now</p><img class="mb-10" src="/src/assets/icons/stars.png">
           </div>
         </div>
       </div>
-      <p class="my-16">“Me considero muito profissional e exigente, prezo muito pela qualidade e sabor só uso ingredientes
-        de primeira qualidade, pois acredito que é a base de tudo, posso dizer que sou bem Old School.”</p>
+      <p class="my-16">“Me considero muito profissional e exigente, prezo muito pela qualidade e sabor. Só uso ingredientes
+        de primeira qualidade, pois acredito que é a base de tudo. Posso dizer que sou bem Old School.”</p>
     </v-container>
   </div>
 
@@ -84,7 +84,7 @@ import Contact from '../components/Contact.vue'
   <div class="bg-black">
     <v-container class="text py-16">
       <p>A ideia do <span style="font:arial; color: rgb(216, 56, 56); font-size: 35px;">manger.pt</span> surgiu na vontade
-        e na necessidade de fazer parte de um novo mercado e também me desafiar noutras andanças como esse mundo digitais
+        e na necessidade de fazer parte de um novo mercado e também me desafiar noutras andanças, como esse mundo digital,
         dando a conhecer minhas delícias e trabalho e também minha fascinação pela cozinha.</p>
     </v-container>
   </div>
@@ -94,10 +94,11 @@ import Contact from '../components/Contact.vue'
     <v-container class="d-flex justify-center py-16">
       <div class="card-menu d-flex flex-column align-center justify-space-between">
         <h3 class="mb-6">MENU</h3>
-        <p class="mb-16">Serão inicialmente 6 sobremesas e um Pão na nossa loja , mas sempre com a possibilidade de aceitar qualquer
+        <p class="mb-16">Serão inicialmente 7 sobremesas e um Pão na nossa loja , mas sempre com a possibilidade de
+          aceitar qualquer
           encomenda, doce ou salgada, mediante consulta, posso garantir que serão de altíssima qualidade e
           com muito sabor.</p>
-          <button class="pointer" @click="goMenu">Go to menu</button>
+        <button class="pointer" @click="goMenu">Go to menu</button>
       </div>
     </v-container>
   </div>
@@ -109,7 +110,8 @@ import Contact from '../components/Contact.vue'
 export default {
   methods: {
     goMenu() {
-      this.$router.push({name:'menu'});
+      window.scrollTo(0,0);
+      this.$router.push({ name: 'menu' });
     },
   },
 }
@@ -117,7 +119,6 @@ export default {
 </script>
 
 <style scoped>
-
 h2 {
   font-size: 40px;
   font-weight: 500;
@@ -163,22 +164,24 @@ header {
   background-color: #DA6852;
 }
 
-.section2 .text p{
+.section2 .text p {
   width: 500px;
 }
 
 @media screen and (max-width:1100px) {
-.section2 {
-  flex-direction: column;
-}
-.section2 div {
-  justify-content: center !important;
-}
-.section2 .text p {
-  width: 75vw;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .section2 {
+    flex-direction: column;
+  }
+
+  .section2 div {
+    justify-content: center !important;
+  }
+
+  .section2 .text p {
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .section3 {
@@ -212,7 +215,7 @@ header {
 .card-menu {
   max-width: 600px;
   background-color: #010101;
-  color:#e3e3e3;
+  color: #e3e3e3;
   padding: 50px 100px 100px 100px;
   text-align: center;
 }
@@ -221,7 +224,8 @@ header {
   .section3 p {
     max-width: 100vw;
   }
-    .card-menu {
+
+  .card-menu {
     padding: 50px 50px 100px 50px;
   }
 }
@@ -229,6 +233,7 @@ header {
 h3 {
   font-size: 40px;
 }
+
 .card-menu p {
   font-size: 24px;
 }
@@ -255,6 +260,4 @@ h3 {
   /* IE 10 and IE 11 */
   user-select: none;
   /* Standard syntax */
-}
-
-</style>
+}</style>

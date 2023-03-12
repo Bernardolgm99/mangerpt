@@ -14,7 +14,7 @@
         <v-col class="d-md-none"></v-col>
         <v-col class="d-flex justify-center">
           <div>
-            <img class='pointer' style="width:39px" src="/src/assets/icons/hat1.png" @click="goHome">
+            <img class='pointer' style="width:59px" src="/src/assets/icons/hat2.png" @click="goHome">
           </div>
         </v-col>
         <v-col class="d-none d-md-block pa-0">
@@ -52,9 +52,11 @@ export default {
       }
     },
     goMenu() {
+      window.scrollTo(0, 0);
       this.$router.push({name:'menu'});
     },
     goHome() {
+      window.scrollTo(0, 0);
       this.$router.push({name:'home'});
     },
   },
@@ -64,7 +66,6 @@ export default {
 <style scoped>
 nav {
   position: fixed;
-  height: 64px;
   width: 100vw;
   background-color: #e3e3e3e3;
   z-index: 1;
