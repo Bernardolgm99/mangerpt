@@ -19,7 +19,7 @@ import Contact from '../components/Contact.vue'
   <div>
     <v-row class="section2 d-flex flex-wrap ma-0">
       <v-col class="d-flex justify-end pa-0 bg-white">
-        <div class="chef-img">
+        <div class="chef-img" style="padding-right: 200px;">
           <img style="max-width: 100%; width: 521px; min-width: 100%; vertical-align: bottom;" src="/src/assets/icons/chef.jpg">
         </div>
       </v-col>
@@ -150,7 +150,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('/src/assets/icons/header.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('/src/assets/icons/section2.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -168,7 +168,15 @@ header {
   width: 500px;
 }
 
+.chef-img {
+  padding-right: 200px;
+}
+
 @media screen and (max-width:1100px) {
+
+  .chef-img {
+    padding-right: 0px;
+  }
   .section2 {
     flex-direction: column;
   }
@@ -185,8 +193,8 @@ header {
 }
 
 .section3 {
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .8)), url('/src/assets/icons/section3.png');
-  background-size: cover;
+  background-image: linear-gradient(to bottom, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .8)), url('/src/assets/icons/hat2.png');
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
   min-height: 350px;
@@ -206,7 +214,7 @@ header {
 }
 
 .section6 {
-  background-image: linear-gradient(to right, RGBA(0, 0, 0, .9), RGBA(0, 0, 0, .8)), url('/src/assets/icons/section3.png');
+  background-image: linear-gradient(to right, RGBA(0, 0, 0, .7), RGBA(0, 0, 0, .7)), url('/src/assets/icons/section1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

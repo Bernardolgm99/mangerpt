@@ -5,7 +5,7 @@
       <hr color="#999" class="w-75">
       <div class="menu-mobile-text pointer py-15 w-100" @click="goMenu">menu</div>
       <hr color="#999" class="w-75">
-      <div class="menu-mobile-text pointer py-15 w-100">contact</div>
+      <div class="menu-mobile-text pointer py-15 w-100"><a href="#contact" @click="openMenu">contact</a></div>
     </div>
   </div>
   <nav class="conteiner">
@@ -21,7 +21,9 @@
           <div class="d-flex justify-space-between h-100">
             <div class="navegationBtn pointer d-flex align-center px-10" @click="goHome"><span>home</span></div>
             <div class="navegationBtn pointer d-flex align-center px-10" @click="goMenu"><span>menu</span></div>
-            <div class="navegationBtn pointer d-flex align-center px-10"><span>contact</span></div>
+            <a href="#contact" class="navegationBtn pointer d-flex align-center px-10">
+              <span>contact</span>
+            </a>
           </div>
         </v-col>
         <v-col class="d-none d-md-block"></v-col>
@@ -64,6 +66,15 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:active {
+  color: #000;
+}
+
 nav {
   position: fixed;
   width: 100vw;
