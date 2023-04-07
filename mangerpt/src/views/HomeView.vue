@@ -1,16 +1,17 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
 import Contact from '../components/Contact.vue'
+import Gallery from '../components/Gallery.vue'
 </script>
 
 <template>
   <NavBar />
 
-
   <!-- Section 1 -->
   <header>
     <v-container class="section1">
-      <img style="max-width: 100%; width: 521px; min-width: 100%; vertical-align: bottom;" src="/src/assets/icons/white-logo.png">
+      <img style="max-width: 100%; width: 521px; min-width: 100%; vertical-align: bottom;"
+        src="/src/assets/icons/white-logo.png">
     </v-container>
   </header>
 
@@ -71,11 +72,13 @@ import Contact from '../components/Contact.vue'
         </div>
         <div class="mx-8 my-5 card-out d-flex justify-center align-center">
           <div class="card-in d-flex flex-column align-center text">
-            <p class="my-auto mx-8">7 Years Hotel Union Øye Norway till now</p><img class="mb-10" src="/src/assets/icons/stars.png">
+            <p class="my-auto mx-8">7 Years Hotel Union Øye Norway</p><img class="mb-10"
+              src="/src/assets/icons/stars.png">
           </div>
         </div>
       </div>
-      <p class="my-16">“Me considero muito profissional e exigente, prezo muito pela qualidade e sabor. Só uso ingredientes
+      <p class="my-16">“Me considero muito profissional e exigente, prezo muito pela qualidade e sabor. Só uso
+        ingredientes
         de primeira qualidade, pois acredito que é a base de tudo. Posso dizer que sou bem Old School.”</p>
     </v-container>
   </div>
@@ -103,6 +106,8 @@ import Contact from '../components/Contact.vue'
     </v-container>
   </div>
 
+  <Gallery />
+
   <Contact />
 </template>
 
@@ -110,12 +115,12 @@ import Contact from '../components/Contact.vue'
 export default {
   methods: {
     goMenu() {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
       this.$router.push({ name: 'menu' });
     },
-  },
+    components: { Gallery }
+  }
 }
-
 </script>
 
 <style scoped>

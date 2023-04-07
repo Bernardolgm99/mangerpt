@@ -45,9 +45,9 @@ export default {
 
         { id: 4, type: 1, name: "Bolo de Tâmaras", description: "Diametro 20cm", price: "25€", src: "/assets/bolo-de-tamara.jpg" },
 
-        { id: 5, type: 1, name: "Salt Caramel", description: "20 x 30cm", price: "40€", src: "/assets/salt-cramel.jpg" },
+        { id: 5, type: 1, name: "Salted Caramel", description: "20 x 30cm", price: "40€", src: "/assets/salt-cramel.jpg" },
 
-        { id: 6, type: 1, name: "Entremet Chocolat Cremely", description: "Diametro 20cm", price: "60€", src: "/assets/chocolate-cremeux.jpg" },
+        { id: 6, type: 1, name: "Entremet Chocolat Crémeux", description: "Diametro 20cm", price: "60€", src: "/assets/chocolate-cremeux.jpg" },
 
         { id: 7, type: 1, name: "Charlote Pistachio Chocolate", description: "Diametro 20cm", price: "45€", src: "/assets/charlote-pistachio-chocolate.jpg" },
 
